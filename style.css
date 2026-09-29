@@ -11,17 +11,18 @@ body {
 body main .header {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
     background-color: #310238;
     font-size: 1.2em;
-    padding: 0.5em;
-    text-align: center;
+    padding: 1em;
     position: fixed;
     width: 100%;
-    height: 180px;
+    height: 130px;
     top: 0;
     z-index: 1000;
 }
+
 
 body main .header a img {
     float: left;
@@ -50,7 +51,7 @@ body main .header h4 {
 
 body main .header .hyperlinks {
     display: flex;
-    justify-content:space-between
+    justify-content:space-evenly
 }
 body .header a {
     color: white;
