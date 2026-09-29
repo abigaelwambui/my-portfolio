@@ -1,30 +1,228 @@
-.header {
-    display: block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body main .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     background-color: #310238;
     font-size: 1.2em;
     padding: 0.5em;
     text-align: center;
     position: fixed;
     width: 100%;
+    height: 120px;
     top: 0;
     z-index: 1000;
 }
 
-.header h1 {
+body main .header h2 {
     color: white;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
+    font-size: 2em;
     font-style: normal;
     padding: 0;
     margin: 0;
 }
 
-.header h3 {
+body main .header h4 {
     color: white;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
+    font-size: 1rem;
     font-style: normal;
     padding: 0;
     margin: 0.5em;
 }
+
+body .hyperlinks {
+    display: flex;
+    justify-content:space-between
+}
+body .header a {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body main #about {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 8em;
+    
+}
+
+body main h2 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #310238;
+    padding: 1em
+}
+
+body main p {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #310238;
+}
+
+body main #projects {
+    display: block;
+    width: 100%;
+    background-color: #410f496f;
+    margin: 10px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+main #projects .project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+main #projects .project-item {
+    background-color: #fdfdfd5e;
+    
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+    width: 90%;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+main #projects .project-item h4 {
+
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #310238;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+main #projects .project-item a {
+    text-decoration: none;
+}
+main #projects .project-item p {
+        margin-bottom: 0.5em;
+        color: #fcfbfb;
+     }
+main #projects .project-item img {
+       width: 100%;
+       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+       border-radius: 10px;
+     }
+    
+
+main #projects .project-item:hover {
+        transform: scale(1.05);
+}
+
+body #footer {
+    display: block;
+    background-color: #310238;
+    padding: 2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+body #footer p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+}
+
+body #footer ul li img {
+    width: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+body #footer ul li a {
+    text-decoration: none;
+}
+
+body #footer ul li hr {
+    border-top-width: 1px;
+    flex-grow: 1;
+    border-color: #4c29516f;
+    height: 0;
+    box-sizing: content-box;
+}
+body #footer ul {
+    list-style: none;
+    line-height: 3em;
+}
+
+body #footer ul li .copyright p {
+    font-size: 0.8em;
+
+}
+
+
+@media only screen and (max-width: 550px) {
+    body main .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 130px
+    }
+
+    body main .header h2 {
+    font-size: 1.5em;
+
+    }
+
+    body main .header h4 {
+    font-size: 0.8em;
+    }
+
+    body .header a {
+    font-size: 13px;
+    }
+
+    main #projects .project-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    }
+
+    body #footer ul {
+    list-style: none;
+    line-height: 2em;
+    }
+
+    body #footer ul li .copyright p {
+    font-size: 10px;
+
+}
+
+}
+
+
+
+
+
+
 
